@@ -1,11 +1,25 @@
+import java.io.File;
 import java.util.ArrayList;
+import java.util.Formatter;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        final String NOME = "turma.txt";
         final int FIM = 0;
         ArrayList<Aluno> turma = new ArrayList<>();
+        Arquivo arquivo = new Arquivo(NOME);
         int opcao;
+        Scanner entrada;
+        Formatter saida;
+
+        entrada = arquivo.abreArquivo();
+
+        if (entrada != null){
+            arquivo.leArquivo(entrada, turma);
+            arquivo.fechaArquivo(entrada);
+        }
+
 
         opcao = menu();
         while (opcao != FIM) {
@@ -14,8 +28,10 @@ public class Main {
                     incluir(turma);
                     break;
                 case 2:
+                    alterar(turma);
                     break;
                 case 3:
+                    excluir(turma);
                     break;
                 case 4:
                     listar(turma);
@@ -24,7 +40,65 @@ public class Main {
 
             opcao = menu();
         }
+
+        saida = arquivo.abreArquivoGravar();
+
+        if (saida != null) {
+            arquivo.gravaArquivo(saida, turma);
+            arquivo.fechaArquivo(saida);
+        }
 //
+    }
+
+    public static void excluir (ArrayList<Aluno> turma) {
+        if (turma.isEmpty()) {
+            System.out.println("Turma Vazia");
+            return;
+        }
+
+        listar(turma);
+        String nome = leNome();
+        int pos = pesquisaNome(nome, turma);
+        if (pos == -1){
+            System.out.println("Erro: nome não encontrado");
+            return;
+        }
+        turma.remove(pos);
+    }
+
+    public static void alterar(ArrayList<Aluno> turma) {
+        String nome;
+
+        if (turma.isEmpty()){
+            System.out.println("Turma vazia");
+            return;
+        }
+        nome = leNome();
+        int pos = pesquisaNome(nome, turma);
+        if (pos == -1) {
+            System.out.println("Erro: nome não encontrado");
+            return;
+        }
+
+        int n1 = leNumero("Entre com a nota: ");
+        int n2 = leNumero("Entre com a nota: ");
+        turma.get(pos).setN1(n1);
+        turma.get(pos).setN2(n2);
+
+
+    }
+
+    public static int pesquisaNome(String nome, ArrayList<Aluno> turma){
+        int pos = -1;
+
+        nome = nome.toLowerCase();
+        for (int i = 0; i< turma.size(); i++){
+            if (turma.get(i).getNome().toLowerCase().equals(nome)){
+                pos = i;
+                break;
+            }
+        }
+        return pos;
     }
 
     public static void incluir(ArrayList<Aluno> turma) {
