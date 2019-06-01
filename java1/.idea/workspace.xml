@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2f82e0e-e17d-44a1-8930-985da8f7e512" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP3/src/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/src/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/src/Main.java" afterDir="false" />
     </list>
@@ -23,8 +22,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/TP3/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="21" selection-start-column="21" selection-end-column="21" />
+                <state relative-caret-position="255">
+                  <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -74,7 +73,7 @@
             <entry file="file://$PROJECT_DIR$/TP3/src/Log.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="272">
-                  <caret line="49" column="79" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
+                  <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -133,8 +132,8 @@
         <option value="$PROJECT_DIR$/TurmaJava/src/Arquivo.java" />
         <option value="$PROJECT_DIR$/TurmaJava/src/Main.java" />
         <option value="$PROJECT_DIR$/TP3/src/Calculadora.java" />
-        <option value="$PROJECT_DIR$/TP3/src/Log.java" />
         <option value="$PROJECT_DIR$/TP3/src/Main.java" />
+        <option value="$PROJECT_DIR$/TP3/src/Log.java" />
       </list>
     </option>
   </component>
@@ -180,7 +179,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559415222572" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559416887388" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -267,12 +266,12 @@
       <workItem from="1558488945420" duration="597000" />
       <workItem from="1558520902392" duration="6808000" />
       <workItem from="1559126505662" duration="5806000" />
-      <workItem from="1559298268403" duration="22338000" />
+      <workItem from="1559298268403" duration="24040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55920000" />
+    <option name="totallyTimeSpent" value="57622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -600,14 +599,14 @@
     <entry file="file://$PROJECT_DIR$/TP3/src/Log.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="49" column="79" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TP3/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
         </state>
       </provider>
     </entry>

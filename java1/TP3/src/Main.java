@@ -5,11 +5,12 @@ public class Main {
         final int FIM = 0;
         final int OPERACOES = 4;
         final int TAM = 5;
-        int opcao,contador = 0, contSoma = 0, contSub = 0, contMult = 0, contDiv = 0;
+        int opcao,contador = 0;/*, contSoma = 0, contSub = 0, contMult = 0, contDiv = 0;*/
         double n1,n2;
 
         Calculadora calc;
         String[] log = new String[TAM];
+        int[] contOperacoes = new int[OPERACOES];
         Log logMemoria;
         opcao = menu();
 
@@ -17,7 +18,7 @@ public class Main {
 
             calc = new Calculadora();
             logMemoria = new Log();
-
+            contaOperacao(opcao, contOperacoes);
 
             switch (opcao){
                 case 1:
@@ -51,7 +52,7 @@ public class Main {
                     break;
 
                 case 5:
-                    JOptionPane.showMessageDialog(null, logMemoria.toString(log));
+                    JOptionPane.showMessageDialog(null, "Número de vezes que cada operação foi usada: \n"+"Soma: "+contOperacoes[0]+"\n"+"Subtração: "+contOperacoes[1]+"\n"+"Multiplicação: "+contOperacoes[2]+"\n"+"Divisão: "+contOperacoes[3]+"\n"+logMemoria.toString(log));
                     break;
 
                 default:
@@ -63,6 +64,25 @@ public class Main {
         }
     }
 
+    public static void contaOperacao(int operacao, int[] contOperacoes) {
+        switch (operacao){
+            case 1:
+                contOperacoes[0]++;
+                break;
+            case 2:
+                contOperacoes[1]++;
+                break;
+            case 3:
+                contOperacoes[2]++;
+                break;
+            case 4:
+                contOperacoes[3]++;
+                break;
+
+            default:
+                break;
+        }
+    }
 
     public static double leNumero(String string){
         double opcao;

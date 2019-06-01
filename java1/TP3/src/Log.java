@@ -45,12 +45,9 @@ public class Log {
         }
     }
 
-    public void contaOperacao(int operacao,int contSoma, int contSub, int contMult, int contDiv, int[] contOperacoes) {
-
-    }
 
     public String toString(String[] log) {
 
-        return log[0] +"\n" + log[1]+"\n" + log[2]+"\n" + log[3]+"\n" + log[4];
+        return "\nLog das últimas operaões:\n"+log[0] +"\n" + log[1]+"\n" + log[2]+"\n" + log[3]+"\n" + log[4];
     }
 }
