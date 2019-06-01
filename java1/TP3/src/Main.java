@@ -8,44 +8,38 @@ public class Main {
         double n1,n2;
         Calculadora calc;
 
-
         opcao = menu();
-
-
         while (opcao != FIM) {
 
             n1 = leNumero("Digite qual o valor de n1: ");
             n2 = leNumero("Digite qual o valor de n2: ");
-            calc = new Calculadora(n1 , n2);
+            calc = new Calculadora();
+
 
             switch (opcao){
                 case 1:
-                    JOptionPane.showMessageDialog(null, "A soma de "+n1+" e "+n2+" = "+ calc.soma(n1,n2));
+                    JOptionPane.showMessageDialog(null, calc.toString() +"\nA soma de "+n1+" e "+n2+" = "+ calc.soma(n1,n2));
                     break;
                 case 2:
-                    JOptionPane.showMessageDialog(null, "A subtração de "+n1+" e "+n2+" = "+ calc.subtrai(n1,n2));
+                    JOptionPane.showMessageDialog(null, calc.toString() +"\nA subtração de "+n1+" e "+n2+" = "+ calc.subtrai(n1,n2));
                     break;
                 case 3:
-                    JOptionPane.showMessageDialog(null, "A multiplicação de "+n1+" e "+n2+" = "+ calc.multiplica(n1,n2) );
+                    JOptionPane.showMessageDialog(null, calc.toString() +"\nA multiplicação de "+n1+" e "+n2+" = "+ calc.multiplica(n1,n2) );
                     break;
                 case 4:
                     if (n2 == 0){
-                        JOptionPane.showMessageDialog(null, "O valor de n2 é 0. Não pode dividir por 0");
+                        JOptionPane.showMessageDialog(null, calc.toString() +"\nO valor de n2 é "+n2+". Não pode dividir por 0");
                         break;
                     }
-                    JOptionPane.showMessageDialog(null, "A divisão de "+n1+" e "+n2+" = "+ calc.divide(n1,n2));
+                    JOptionPane.showMessageDialog(null, calc.toString() +"\nA divisão de "+n1+" e "+n2+" = "+ calc.divide(n1,n2));
                     break;
 
                     default:
                         JOptionPane.showMessageDialog(null, "Selecione uma opção válida");
                         break;
             }
-
             opcao = menu();
         }
-
-
-
     }
 
 

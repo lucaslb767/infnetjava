@@ -34,15 +34,36 @@ public class Calculadora {
         return n1 + n2;
     }
 
+    public static double soma(){
+        return 0;
+    }
+
     public static double subtrai(double n1, double n2) {
         return n1 - n2;
+    }
+
+    public static double subtrai () {
+        return 0;
     }
 
     public static double multiplica(double n1, double n2) {
         return n1*n2;
     }
 
+    public static double multiplica() {
+        return 0;
+    }
+
     public static double divide(double n1, double n2) {
         return n1/n2;
+    }
+
+    public static double divide () {
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Calculadora";
     }
 }
