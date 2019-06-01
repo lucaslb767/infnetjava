@@ -5,7 +5,7 @@ public class Main {
         final int FIM = 0;
         final int OPERACOES = 4;
         final int TAM = 5;
-        int opcao,contador = 0;/*, contSoma = 0, contSub = 0, contMult = 0, contDiv = 0;*/
+        int opcao,contador = 0;
         double n1,n2;
 
         Calculadora calc;
@@ -52,7 +52,7 @@ public class Main {
                     break;
 
                 case 5:
-                    JOptionPane.showMessageDialog(null, "Número de vezes que cada operação foi usada: \n"+"Soma: "+contOperacoes[0]+"\n"+"Subtração: "+contOperacoes[1]+"\n"+"Multiplicação: "+contOperacoes[2]+"\n"+"Divisão: "+contOperacoes[3]+"\n"+logMemoria.toString(log));
+                    JOptionPane.showMessageDialog(null, formataContOperacoes(contOperacoes)+logMemoria.toString(log));
                     break;
 
                 default:
@@ -62,6 +62,10 @@ public class Main {
             contador++;
             opcao = menu();
         }
+    }
+
+    public static String formataContOperacoes(int[] contOperacoes) {
+        return "Número de vezes que cada operação foi usada: \n"+"Soma: "+contOperacoes[0]+"\n"+"Subtração: "+contOperacoes[1]+"\n"+"Multiplicação: "+contOperacoes[2]+"\n"+"Divisão: "+contOperacoes[3]+"\n";
     }
 
     public static void contaOperacao(int operacao, int[] contOperacoes) {
