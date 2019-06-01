@@ -4,20 +4,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         final int FIM = 0;
-        String input;
         int opcao;
         Calculadora calc;
 
-        input = JOptionPane.showInputDialog(null, "Digite:\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n0 - Sair");
-        System.out.println(input);
-        opcao = Integer.parseInt(input);
-        System.out.println(opcao);
+
+        opcao = menu();
 
 
         while (opcao != FIM) {
-            case 1:
 
+            switch (opcao){
+                case 1:
+                    //todo: continuar a estrutura do codigo para depois da vacina
+            }
 
+            opcao = menu();
         }
 
 
@@ -25,7 +26,20 @@ public class Main {
     }
 
     public static double leNumero(String string){
+        int opcao;
         String input = JOptionPane.showInputDialog(null, string);
+        opcao = Integer.parseInt(input);
+
+        return opcao;
+    }
+
+    public static int menu(){
+        String input;
+        int opcao;
+        input = JOptionPane.showInputDialog(null, "Digite:\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n0 - Sair");
+        opcao = Integer.parseInt(input);
+
+        return opcao;
 
     }
 }
