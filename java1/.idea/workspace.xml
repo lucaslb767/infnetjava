@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c2f82e0e-e17d-44a1-8930-985da8f7e512" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/TP3/src/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/src/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TP3/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="352">
+              <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -28,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TP3/src/Calculadora.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="352">
+              <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="13" />
               <folding>
                 <element signature="e#53#54#0" expanded="true" />
                 <element signature="e#78#79#0" expanded="true" />
@@ -70,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TP3/src/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="475">
+              <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
               <folding>
                 <element signature="e#100#101#0" expanded="true" />
                 <element signature="e#146#147#0" expanded="true" />
@@ -139,8 +140,8 @@
         <option value="$PROJECT_DIR$/TurmaJava/src/Main.java" />
         <option value="$PROJECT_DIR$/TP3/src/Calculadora.java" />
         <option value="$PROJECT_DIR$/TP3/src/Main2.java" />
-        <option value="$PROJECT_DIR$/TP3/src/Main.java" />
         <option value="$PROJECT_DIR$/TP3/src/Log.java" />
+        <option value="$PROJECT_DIR$/TP3/src/Main.java" />
       </list>
     </option>
   </component>
@@ -186,7 +187,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559563664555" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559583486796" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -274,12 +275,12 @@
       <workItem from="1558488945420" duration="597000" />
       <workItem from="1558520902392" duration="6808000" />
       <workItem from="1559126505662" duration="5806000" />
-      <workItem from="1559298268403" duration="32103000" />
+      <workItem from="1559298268403" duration="34874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65685000" />
+    <option name="totallyTimeSpent" value="68456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -302,9 +303,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33002833" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24980047" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -572,25 +573,10 @@
     <entry file="file://$PROJECT_DIR$/TP3/src/Main2.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TP3/src/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="e#100#101#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TP3/src/Calculadora.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="352">
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="13" />
           <folding>
             <element signature="e#53#54#0" expanded="true" />
             <element signature="e#78#79#0" expanded="true" />
@@ -622,10 +608,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TP3/src/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+          <folding>
+            <element signature="e#100#101#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TP3/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="352">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
         </state>
       </provider>
     </entry>

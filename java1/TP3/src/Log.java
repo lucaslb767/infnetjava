@@ -1,11 +1,10 @@
 
 public class Log {
-    final int TAM = 5;
     private int contador = 0;
     String[] log;
 
 
-    public Log(){
+    public Log( int TAM){
         log = new String[TAM];
     }
 
@@ -18,30 +17,30 @@ public class Log {
     }
 
 
-    public void adicionaOperacao(int operacao, double n1, double n2, Calculadora calc, String[] log){
+    public void adicionaOperacao(int operacao, double n1, double n2, double resultado){
         final int ULTIMAPOS = 4;
         String contaMemorizar = "";
 
 
         switch (operacao) {
             case 1:
-                contaMemorizar = n1 + " + " + n2 + " = " + calc.soma(n1,n2);
+                contaMemorizar = n1 + " + " + n2 + " = " + resultado ;
                 break;
             case 2:
-                contaMemorizar = n1 + " - " + n2 + " = " + calc.subtrai(n1,n2);
+                contaMemorizar = n1 + " - " + n2 + " = " + resultado;
                 break;
             case 3:
-                contaMemorizar = n1 + " * " + n2 + " = " + calc.multiplica(n1,n2);
+                contaMemorizar = n1 + " * " + n2 + " = " + resultado ;
                 break;
             case 4:
-                contaMemorizar = n1 + " / " + n2 + " = " + calc.divide(n1,n2);
+                contaMemorizar = n1 + " / " + n2 + " = " + resultado;
                 break;
             default:
                 break;
         }
 
         if (!contaMemorizar.isEmpty()) {
-            if (this.contador < 5) {
+            if (this.contador < log.length) {
                 log[this.contador] = contaMemorizar;
             } else {
                 for (int i = 0; i < ULTIMAPOS; i++) {
@@ -49,13 +48,17 @@ public class Log {
                 }
                 log[ULTIMAPOS] = contaMemorizar;
             }
+            this.contador ++;
         }
-        this.contador ++;
     }
 
+    @Override
+    public String toString() {
 
-    public String toString(String[] log) {
-
-        return "\nLog das últimas operaões:\n"+log[0] +"\n" + log[1]+"\n" + log[2]+"\n" + log[3]+"\n" + log[4];
+        String resultado = "Log das últimas operações:\n";
+        for (int i =0; i < this.log.length; i++) {
+            resultado += this.log[i]+"\n";
+        }
+        return resultado;
     }
 }
