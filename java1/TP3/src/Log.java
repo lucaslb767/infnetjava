@@ -1,16 +1,25 @@
 import javax.swing.*;
 
 public class Log {
+    final int TAM = 5;
+    private int contador = 0;
+    String[] log;
+
 
     public Log(){
-
+        log = new String[TAM];
     }
 
-    public Log (int operacao, double n1, double n2,int contador, String[] log) {
-        adicionaOperacao(operacao, n1, n2, contador, log);
+    public String[] getLog() {
+        return log;
     }
 
-    public static void adicionaOperacao(int operacao, double n1, double n2,int contador, String[] log){
+    public void setLog(String[] log) {
+        this.log = log;
+    }
+
+
+    public void adicionaOperacao(int operacao, double n1, double n2, String[] log){
         final int ULTIMAPOS = 4;
         Calculadora calc = new Calculadora();
         String contaMemorizar = "";
@@ -34,8 +43,8 @@ public class Log {
         }
 
         if (!contaMemorizar.isEmpty()) {
-            if (contador < 5) {
-                log[contador] = contaMemorizar;
+            if (this.contador < 5) {
+                log[this.contador] = contaMemorizar;
             } else {
                 for (int i = 0; i < ULTIMAPOS; i++) {
                     log[i] = log[i+1];
@@ -43,6 +52,7 @@ public class Log {
                 log[ULTIMAPOS] = contaMemorizar;
             }
         }
+        this.contador ++;
     }
 
 

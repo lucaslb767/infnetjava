@@ -1,6 +1,14 @@
 public class Calculadora {
-    private double n1;
-    private double n2;
+    private double n1 = 0;
+    private double n2 = 0;
+
+    public Calculadora() {
+    }
+
+    public Calculadora(double n1, double n2){
+        setN1(n1);
+        setN2(n2);
+    }
 
     public double getN1() {
         return n1;
@@ -18,48 +26,37 @@ public class Calculadora {
         this.n2 = n2;
     }
 
-    public Calculadora(double n1, double n2){
-        setN1(n1);
-        setN2(n2);
-    }
-
-    public Calculadora() {
-        setN1(0);
-        setN2(0);
-    }
-
-
 
     public static double soma(double n1, double n2){
         return n1 + n2;
     }
 
-    public static double soma(){
-        return 0;
+    public  double soma(){
+        return this.getN1() + this.getN2();
     }
 
     public static double subtrai(double n1, double n2) {
         return n1 - n2;
     }
 
-    public static double subtrai () {
-        return 0;
+    public double subtrai () {
+        return this.getN1() - this.getN2();
     }
 
     public static double multiplica(double n1, double n2) {
         return n1*n2;
     }
 
-    public static double multiplica() {
-        return 0;
+    public double multiplica() {
+        return this.getN1()*this.getN2();
     }
 
     public static double divide(double n1, double n2) {
         return n1/n2;
     }
 
-    public static double divide () {
-        return 0;
+    public double divide () {
+        return this.getN1()/this.getN2();
     }
 
     @Override
