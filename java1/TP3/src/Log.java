@@ -1,4 +1,3 @@
-import javax.swing.*;
 
 public class Log {
     final int TAM = 5;
@@ -19,9 +18,8 @@ public class Log {
     }
 
 
-    public void adicionaOperacao(int operacao, double n1, double n2, String[] log){
+    public void adicionaOperacao(int operacao, double n1, double n2, Calculadora calc, String[] log){
         final int ULTIMAPOS = 4;
-        Calculadora calc = new Calculadora();
         String contaMemorizar = "";
 
 
