@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         final int FIM = 0;
         final int OPERACOES = 4;
-
         int opcao;
         double n1,n2;
 
@@ -12,12 +11,9 @@ public class Main {
         int[] contOperacoes = new int[OPERACOES];
         Log logMemoria = new Log(5);
         opcao = menu();
-
         while (opcao != FIM) {
-
             calc = new Calculadora();
             contaOperacao(opcao, contOperacoes);
-
             switch (opcao){
                 case 1:
                     n1 = leNumero("Digite qual o valor de n1: ");
@@ -52,7 +48,6 @@ public class Main {
                 case 5:
                     JOptionPane.showMessageDialog(null, formataContOperacoes(contOperacoes)+logMemoria.toString());
                     break;
-
                 default:
                     JOptionPane.showMessageDialog(null, "Selecione uma opção válida");
                         break;
@@ -62,7 +57,9 @@ public class Main {
     }
 
     public static String formataContOperacoes(int[] contOperacoes) {
-        return "Número de vezes que cada operação foi usada: \n"+"Soma: "+contOperacoes[0]+"\n"+"Subtração: "+contOperacoes[1]+"\n"+"Multiplicação: "+contOperacoes[2]+"\n"+"Divisão: "+contOperacoes[3]+"\n";
+        return "Número de vezes que cada operação foi usada: \n"+
+                "Soma: "+contOperacoes[0]+"\n"+"Subtração: "+contOperacoes[1]+
+                "\n"+"Multiplicação: "+contOperacoes[2]+"\n"+"Divisão: "+contOperacoes[3]+"\n";
     }
 
     public static void contaOperacao(int operacao, int[] contOperacoes) {
@@ -79,7 +76,6 @@ public class Main {
             case 4:
                 contOperacoes[3]++;
                 break;
-
             default:
                 break;
         }
@@ -88,6 +84,7 @@ public class Main {
     public static double leNumero(String string){
         double opcao;
         String input = JOptionPane.showInputDialog(null, string);
+
         if (input == null || input.isEmpty()){
             input = "0";
         }
@@ -98,9 +95,12 @@ public class Main {
     public static int menu(){
         String input;
         int opcao;
-        input = JOptionPane.showInputDialog(null, "Digite:\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n5 - Log\n0 - Sair");
-        opcao = Integer.parseInt(input);
 
+        input = JOptionPane.showInputDialog(null, "Digite:\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n5 - Log\n0 - Sair");
+        if (input.isEmpty() ||input == null){
+            input = "109";
+        }
+        opcao = Integer.parseInt(input);
         return opcao;
     }
 }

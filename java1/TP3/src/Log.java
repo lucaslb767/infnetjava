@@ -1,8 +1,6 @@
-
 public class Log {
     private int contador = 0;
     String[] log;
-
 
     public Log( int TAM){
         log = new String[TAM];
@@ -16,11 +14,9 @@ public class Log {
         this.log = log;
     }
 
-
     public void adicionaOperacao(int operacao, double n1, double n2, double resultado){
-        final int ULTIMAPOS = 4;
+        final int ULTIMAPOS = log.length - 1;
         String contaMemorizar = "";
-
 
         switch (operacao) {
             case 1:
@@ -55,9 +51,14 @@ public class Log {
     @Override
     public String toString() {
 
-        String resultado = "Log das últimas operações:\n";
+        String resultado = "\nLog das últimas operações:\n";
         for (int i =0; i < this.log.length; i++) {
-            resultado += this.log[i]+"\n";
+
+            if (this.log[i] == null){
+                resultado+= "";
+            } else {
+                resultado += this.log[i] + "\n";
+            }
         }
         return resultado;
     }
